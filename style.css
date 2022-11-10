@@ -1,0 +1,210 @@
+:root{
+    --var:black;
+    --var1:rgb(36, 36, 36);
+    --var2:rgb(49, 49, 49);
+    --var3:rgb(68, 68, 68);
+    --varText: rgb(0, 225, 255);
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    height: 1100px;
+    background: linear-gradient(black, #434343);
+}
+@keyframes animation4 {
+    0%{
+        bottom: -100%;
+    }50%,100%{
+        bottom: 100%;
+    }
+}
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+}
+h2::first-letter{
+    font-size: 1.2em;
+    color: white;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 25vw;
+    height: 400px;
+    background-color: transparent;
+    color: var(--varText);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border: 2px solid var(--var2);
+    border-radius: 15px;
+}
+.box:hover{
+    border: 2px solid var(--varText);
+}
+form{
+    height: 200px;
+}
+.userBox{
+    position: relative;    
+}
+.userBox input{
+    width: 100%;
+    padding: 10px 0;
+    transition: .5s;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border-bottom: 1px #ffff;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.userBox label{
+    font-weight: bold;
+    color: var(--varText);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+.box .userBox input:focus ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    transition: 0.5s;
+}
+label::first-letter{
+    font-size: 13px;
+    color: white;
+}
+.box input{
+    caret-color: var(--varText);
+    border: none;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    margin-top: 0;
+    outline: none;
+}
+.box input::selection{
+    background-color: #434343;
+    color: var(--varText);
+}
+.box input:focus{
+    outline: 1;
+    border: 0;
+    color: rgb(255, 255, 255);
+}
+.line{
+    height: 1px;
+    width: 100%;
+    margin-top: 9px;
+    background-color: white;
+}
+span{
+    background-color: blanchedalmond;
+}
+.box a span{
+    position: absolute;
+    display: block;
+}
+.box a{
+    color: var(--varText);
+    font-size: 1em;
+    border: 1px solid var(--var1);
+    border-radius: 4px;
+    padding: 7px;
+    background-color: var(--var2);
+    margin: 10px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.box a:hover{
+    background-color: var(--varText);
+    color: var(--var1);
+    border-radius: 5px;
+    box-shadow:
+    0 0 5px var(--varText),
+    0 0 25px var(--varText),
+    0 0 50px var(--varText),
+    0 0 100px var(--varText);
+}
+form a{
+    position: relative;
+    display: inline-block;
+    background-color: var(--var3);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+}
+.box a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,  rgb(0, 225, 255));
+    animation: btn-animation 1s linear infinite;
+}
+@keyframes btn-animation {
+    0%{
+        left: -100%;
+    }50%,100%{
+        left: 100%;
+    }
+}
+.box a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(0, 225, 255));
+    animation: btn-animation2 linear infinite;
+    animation-duration: 1s;
+    animation-delay: .25s;
+}
+@keyframes btn-animation2 {
+    0%{
+        top: -100%;
+    }50%,100%{
+        top: 100%;
+    }
+}
+.box a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,rgb(0, 225, 255));
+    animation: btn-animation3 linear infinite;
+    animation-duration: 1s;
+    animation-delay: .5s;
+}
+@keyframes btn-animation3 {
+    0%{
+        right: -100%;
+    }50%,100%{
+        right: 100%;
+    }
+}
+.box a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,rgb(0, 225, 255));
+    animation: btn-animation4 linear infinite;
+    animation-duration: 1s;
+    animation-delay: .75s;
+}
+@keyframes btn-animation4 {
+    0%{
+        bottom: -100%;
+    }50%,100%{
+        bottom: 100%;
+    }
+}
