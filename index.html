@@ -7,10 +7,23 @@
     <meta name="theme-color" content="#0000">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        :root{
+    --var:black;
+    --var1:rgb(36, 36, 36);
+    --var2:rgb(49, 49, 49);
+    --var3:rgb(68, 68, 68);
+    --varText: rgb(0, 225, 255);
+    --varText1: red;
+    --varText2:rgb(0, 255, 85);
+    --varText3:rgb(255, 251, 0);
+    --varText4:rgb(187, 110, 187);
+}
+    </style>
 </head>
 <body>
     <div class="navBar">
-        <a href="" id="firstLink"><h1>Title</h1><span></span></a>
+        <a href="" id="firstLink"><h1>T itle</h1></a>
         <a href="">HomePage<span></span></a>
         <a href="https://github.com/lucasmateus22">My Git Hub<span></span></a>
         <a href="">Others<span></span></a>
@@ -22,7 +35,7 @@
         <span></span>
         <span></span>
         <div class="box">
-            <h2>Login</h2>
+            <h2>L ogin</h2>
     <form action="">
         <div class="userBox">
             <input type="text" placeholder="...">
@@ -43,7 +56,24 @@
             </a>
     </form>  
         </div>
+        
     </div>
+        <div class="footer">
+            <label for="">Temas:</label>
+            <ul>
+                <li style="background-color: var(--varText1);" onclick="red()"></li>
+                <li style="background-color: var(--varText2);"onclick="green()"></li>
+                <li style="background-color: var(--varText);"onclick="Blue()"></li>
+            </ul>
+        </div>
+        <div class="iconUser">
+            <div class="icon">
+                <div class="cabeca"></div>
+                <div class="corpo"></div>
+            </div>
+            <h4>Cadastrar</h4>
+        </div>
     
+    <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
