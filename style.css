@@ -69,16 +69,10 @@ h1{
     position: relative;
     transition: 1s;
 }
-.navBar #firstLink a span:nth-child(1){
-}
 .navBar #firstLink:hover{
     letter-spacing: 0.3em;
-    color: var(--varText);
+    color: var(--blue);
     transition: 1s;
-}
-.navBar #firstLink a span{
-}
-.navBar #firstLink{
 }
 .box1{
     display: flex;
@@ -180,14 +174,14 @@ label::first-letter{
     cursor: pointer;
 }
 .box a:hover{
-    background-color: var(--varText);
+    background-color: var(--blue);
     color: var(--var1);
     border-radius: 5px;
     box-shadow:
-    0 0 5px var(--varText),
-    0 0 25px var(--varText),
-    0 0 50px var(--varText),
-    0 0 100px var(--varText);
+    0 0 5px var(--blue),
+    0 0 25px var(--blue),
+    0 0 50px var(--blue),
+    0 0 100px var(--blue);
 }
 html.reder .box a:hover{
     background-color: var(--blue);
@@ -310,6 +304,24 @@ form a{
     transform: scale(1.3);
     transition: .5s;
 }
+#rd:hover{
+    box-shadow: 0 0 5px var(--red),
+    0 0 25px var(--red),
+    0 0 50px var(--red),
+    0 0 100px var(--red);
+}
+#gr:hover{
+    box-shadow: 0 0 5px var(--green),
+    0 0 25px var(--green),
+    0 0 50px var(--green),
+    0 0 100px var(--green);
+}
+#bl:hover{
+    box-shadow: 0 0 5px var(--blue),
+    0 0 25px var(--blue),
+    0 0 50px var(--blue),
+    0 0 100px var(--blue);
+}
 .iconUser{
     display: flex;
     flex-direction: row;
@@ -321,7 +333,7 @@ form a{
     background-color: var(--var3);
     color: var(--varText);
     border-radius: 25px;
-    border: 1px solid var(--varText);
+    border: 1px solid var(--blue);
     transition: 0.5s;
 }
 .iconUser:hover{
@@ -333,13 +345,13 @@ form a{
     width: 13px;
     height: 13px;
     border-radius: 7px;
-    background-color: var(--varText);
+    background-color: var(--blue);
     margin-bottom: 3px;
 }
 .corpo{
     width: 18px;
     height: 15px;
-    background-color:var(--varText);
+    background-color:var(--blue);
     border-radius: 90% 90% 0 0;
 }
 .icon{
