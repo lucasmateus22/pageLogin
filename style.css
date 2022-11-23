@@ -6,6 +6,7 @@
     --blue: rgb(0, 225, 255);
     --red: red;
     --green:rgb(0, 255, 85);
+    --padrao:rgb(122, 0, 133);
 }
 body{
     font-family: sans-serif;
@@ -19,6 +20,8 @@ body{
     margin: 0;
     background: linear-gradient(black, #434343);
 }
+
+/*------------------------------------  NAVBAR  -----------------------------------------------*/
 .navBar{
     display: flex;
     justify-content: space-around;
@@ -40,7 +43,7 @@ body{
     color: white;
 }
 .navBar a:hover{
-    color: var(--blue);
+    color: var(--padrao);
     letter-spacing: 0.3em;
     transition: 1s;
 }
@@ -49,8 +52,10 @@ body{
     height: 2px;
     width: 100%;
     transition: 1s;
-    background-color: var(--blue);
+    background-color: var(--padrao);
 }
+/*---------------------------------------   LINK NAVBAR --------------------------------------------*/
+
 h1{
     font-size: 40px;
     margin: 0;
@@ -71,9 +76,11 @@ h1{
 }
 .navBar #firstLink:hover{
     letter-spacing: 0.3em;
-    color: var(--blue);
+    color: var(--padrao);
     transition: 1s;
 }
+/*------------------------------------BOX1 E BOX-----------------------------------------------*/
+
 .box1{
     display: flex;
     justify-content: center;
@@ -82,6 +89,7 @@ h1{
     width: 100vw;
     height: 754px;
 }
+
 .box h2{
     margin: 0 0 30px;
     padding: 0;
@@ -90,6 +98,7 @@ h2::first-letter{
     font-size: 1.2em;
     color: white;
 }
+
 .box{
     display: flex;
     flex-direction: column;
@@ -99,15 +108,17 @@ h2::first-letter{
     width: 25vw;
     height: 400px;
     background-color: transparent;
-    color: var(--varText);
+    color: var(--padrao);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border: 2px solid var(--var2);
     border-radius: 15px;
 }
 .box:hover{
-    border: 2px solid var(--blue);
+    border: 2px solid var(--padrao);
 }
+/*--------------------------------------    FORM  E  USERBOX    ---------------------------------------------*/
+
 form{
     height: 200px;
 }
@@ -126,7 +137,7 @@ form{
 }
 .userBox label{
     font-weight: bold;
-    color: var(--blue);
+    color: var(--padrao);
     position: absolute;
     top: 0;
     left: 0;
@@ -143,7 +154,7 @@ label::first-letter{
     color: white;
 }
 .box input{
-    caret-color: var(--blue);
+    caret-color: var(--padrao);
     border: none;
     border-bottom: 1px solid rgb(126, 126, 126);
     margin-top: 0;
@@ -151,7 +162,7 @@ label::first-letter{
 }
 .box input::selection{
     background-color: #434343;
-    color: var(--blue);
+    color: var(--padrao);
 }
 .box input:focus{
     outline: 1;
@@ -163,7 +174,7 @@ label::first-letter{
     display: block;
 }
 .box a{
-    color: var(--blue);
+    color: var(--padrao);
     font-size: 1em;
     border: 1px solid var(--var1);
     border-radius: 4px;
@@ -174,25 +185,15 @@ label::first-letter{
     cursor: pointer;
 }
 .box a:hover{
-    background-color: var(--blue);
+    background-color: var(--padrao);
     color: var(--var1);
     border-radius: 5px;
     box-shadow:
-    0 0 5px var(--blue),
-    0 0 25px var(--blue),
-    0 0 50px var(--blue),
-    0 0 100px var(--blue);
+    0 0 5px var(--padrao),
+    0 0 25px var(--padrao),
+    0 0 50px var(--padrao),
+    0 0 100px var(--padrao);
 }
-html.reder .box a:hover{
-    background-color: var(--blue);
-    color: var(--var1);
-    border-radius: 5px;
-    box-shadow:
-    0 0 5px var(--blue),
-    0 0 25px var(--blue),
-    0 0 50px var(--blue),
-    0 0 100px var(--blue);
-} 
 form a{
     position: relative;
     display: inline-block;
@@ -208,7 +209,7 @@ form a{
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent,  rgb(0, 225, 255));
+    background: linear-gradient(90deg, transparent,  rgb(0, 0, 0));
     animation: btn-animation 1s linear infinite;
 }
 @keyframes btn-animation {
@@ -223,7 +224,7 @@ form a{
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, rgb(0, 225, 255));
+    background: linear-gradient(180deg, transparent, rgb(0, 0, 0));
     animation: btn-animation2 linear infinite;
     animation-duration: 1s;
     animation-delay: .25s;
@@ -240,7 +241,7 @@ form a{
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent,rgb(0, 225, 255));
+    background: linear-gradient(270deg, transparent,rgb(0, 0, 0));
     animation: btn-animation3 linear infinite;
     animation-duration: 1s;
     animation-delay: .5s;
@@ -257,7 +258,7 @@ form a{
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent,rgb(0, 225, 255));
+    background: linear-gradient(360deg, transparent,rgb(0, 0, 0));
     animation: btn-animation4 linear infinite;
     animation-duration: 1s;
     animation-delay: .75s;
@@ -272,7 +273,7 @@ form a{
 .footer{
     display: flex;
     flex-direction: row;
-    color: var(--blue);
+    color: var(--padrao);
     background-color: rgba(0, 0, 0, .1);
     padding: 15px;
     width: 250px;
@@ -281,7 +282,7 @@ form a{
     box-shadow: 0px 15px 10px black;
 }
 .footer:hover{
-    border-color:var(--blue) ;
+    border-color:var(--padrao) ;
 }
 .footer ul{
     display: flex;
@@ -304,24 +305,6 @@ form a{
     transform: scale(1.3);
     transition: .5s;
 }
-#rd:hover{
-    box-shadow: 0 0 5px var(--red),
-    0 0 25px var(--red),
-    0 0 50px var(--red),
-    0 0 100px var(--red);
-}
-#gr:hover{
-    box-shadow: 0 0 5px var(--green),
-    0 0 25px var(--green),
-    0 0 50px var(--green),
-    0 0 100px var(--green);
-}
-#bl:hover{
-    box-shadow: 0 0 5px var(--blue),
-    0 0 25px var(--blue),
-    0 0 50px var(--blue),
-    0 0 100px var(--blue);
-}
 .iconUser{
     display: flex;
     flex-direction: row;
@@ -331,9 +314,9 @@ form a{
     top: 200px;
     width: 10vw;
     background-color: var(--var3);
-    color: var(--varText);
+    color: var(--padrao);
     border-radius: 25px;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--padrao);
     transition: 0.5s;
 }
 .iconUser:hover{
@@ -345,13 +328,13 @@ form a{
     width: 13px;
     height: 13px;
     border-radius: 7px;
-    background-color: var(--blue);
+    background-color: var(--padrao);
     margin-bottom: 3px;
 }
 .corpo{
     width: 18px;
     height: 15px;
-    background-color:var(--blue);
+    background-color:var(--padrao);
     border-radius: 90% 90% 0 0;
 }
 .icon{
@@ -363,6 +346,34 @@ form a{
     height: 100%;
     margin: 5%;
 }
+/*___________________________________________________________________________________________________*/
+#styleR:hover{
+    box-shadow: 0 0 5px var(--red),
+    0 0 25px var(--red),
+    0 0 50px var(--red),
+    0 0 100px var(--red);
+}
+#styleG:hover{
+    box-shadow: 0 0 5px var(--green),
+    0 0 25px var(--green),
+    0 0 50px var(--green),
+    0 0 100px var(--green);
+}
+#styleB:hover{
+    box-shadow: 0 0 5px var(--blue),
+    0 0 25px var(--blue),
+    0 0 50px var(--blue),
+    0 0 100px var(--blue);
+}
+#styleR{
+    background-color: var(--red);
+}
+#styleG{
+    background-color: var(--green);
+}
+#styleB{
+    background-color: var(--blue);
+}
 /*------------------------------------Tema Verde--rgb(0, 255, 85)--------------------------------------*/
 html.green .navBar a:hover{
     color: var(--green);
@@ -373,6 +384,9 @@ html.green .navBar a:hover span{
 html.green .navBar #firstLink:hover{
     color: var(--green);
 }
+html.green .box h2{
+    color: var(--green);
+}
 html.green .box:hover{
     border-color: var(--green);
 }
@@ -381,6 +395,7 @@ html.green .userBox input{
 }
 html.green .box input{
     caret-color: var(--green);
+    color: var(--green);
 }
 html.green .box input::selection{
     color: var(--green);
@@ -388,23 +403,48 @@ html.green .box input::selection{
 html.green .box a{
     color: var(--green);
 }
+html.green .box label{
+    color: var(--green);
+}
+html.green .box a:hover{
+    color: var(--var);
+    background-color: var(--green);
+    box-shadow:
+    0 0 5px var(--green),
+    0 0 25px var(--green),
+    0 0 50px var(--green),
+    0 0 100px var(--green);
+}
 html.green .box a span:nth-child(1){
     background: linear-gradient(90deg, transparent, rgb(0, 255, 85));
 }
 html.green .box a span:nth-child(2){
     background: linear-gradient(180deg, transparent, rgb(0, 255, 85));
 }
-html.green .box a span:nth-child(1){
+html.green .box a span:nth-child(3){
     background: linear-gradient(270deg, transparent, rgb(0, 255, 85));
 }
-html.green .box a span:nth-child(1){
+html.green .box a span:nth-child(4){
     background: linear-gradient(360deg, transparent, rgb(0, 255, 85));
 }
-.html.green .footer{
+html.green .footer{
     color: var(--green);
 }
 html.green .footer:hover{
     border-color: var(--green);
+}
+html.green .footer{
+    color: var(--green);
+}
+html.green .iconUser{
+    color: var(--green);
+    border-color: var(--green);
+}
+html.green .cabeca{
+    background-color: var(--green);
+}
+html.green .corpo{
+    background-color: var(--green);
 }
 
 /*------------------------------------Tema Vermelho--rgb(255, 0, 0)--------------------------------------*/
@@ -418,6 +458,9 @@ html.red .navBar a:hover span{
 html.red .navBar #firstLink:hover{
     color: var(--red);
 }
+html.red .box h2{
+    color: var(--red);
+}
 html.red .box:hover{
     border-color: var(--red);
 }
@@ -426,6 +469,7 @@ html.red .userBox input{
 }
 html.red .box input{
     caret-color: var(--red);
+    color: var(--red);
 }
 html.red .box input::selection{
     color: var(--red);
@@ -433,21 +477,119 @@ html.red .box input::selection{
 html.red .box a{
     color: var(--red);
 }
+html.red .box label{
+    color: var(--red);
+}
+html.red .box a:hover{
+    color: var(--var);
+    background-color: var(--red);
+    box-shadow:
+    0 0 5px var(--red),
+    0 0 25px var(--red),
+    0 0 50px var(--red),
+    0 0 100px var(--red);
+}
 html.red .box a span:nth-child(1){
     background: linear-gradient(90deg, transparent, rgb(255, 0, 0));
 }
 html.red .box a span:nth-child(2){
     background: linear-gradient(180deg, transparent, rgb(255, 0, 0));
 }
-html.red .box a span:nth-child(1){
+html.red .box a span:nth-child(3){
     background: linear-gradient(270deg, transparent, rgb(255, 0, 0));
 }
-html.red .box a span:nth-child(1){
+html.red .box a span:nth-child(4){
     background: linear-gradient(360deg, transparent, rgb(255, 0, 0));
 }
-.html.red .footer{
+html.red .footer{
     color: var(--red);
 }
 html.red .footer:hover{
     border-color: var(--red);
+}
+html.red .footer{
+    color: var(--red);
+}
+html.red .iconUser{
+    color: var(--red);
+    border-color: var(--red);
+}
+html.red .cabeca{
+    background-color: var(--red);
+}
+html.red .corpo{
+    background-color: var(--red);
+}
+/*-----------------------------Tema Azul--rgb(0, 225, 255)---------------------------------------*/
+
+html.blue .navBar a:hover{
+    color: var(--blue);
+}
+html.blue .navBar a:hover span{
+    background-color: var(--blue);
+}
+html.blue .navBar #firstLink:hover{
+    color: var(--blue);
+}
+html.blue .box h2{
+    color: var(--blue);
+}
+html.blue .box:hover{
+    border-color: var(--blue);
+}
+html.blue .userBox input{
+    color: var(--blue);
+}
+html.blue .box input{
+    caret-color: var(--blue);
+    color: var(--blue);
+}
+html.blue .box input::selection{
+    color: var(--blue);
+}
+html.blue .box a{
+    color: var(--blue);
+}
+html.blue .box label{
+    color: var(--blue);
+}
+html.blue .box a:hover{
+    color: var(--var);
+    background-color: var(--blue);
+    box-shadow:
+    0 0 5px var(--blue),
+    0 0 25px var(--blue),
+    0 0 50px var(--blue),
+    0 0 100px var(--blue);
+}
+html.blue .box a span:nth-child(1){
+    background: linear-gradient(90deg, transparent, rgb(0, 225, 255));
+}
+html.blue .box a span:nth-child(2){
+    background: linear-gradient(180deg, transparent, rgb(0, 225, 255));
+}
+html.blue .box a span:nth-child(3){
+    background: linear-gradient(270deg, transparent, rgb(0, 225, 255));
+}
+html.blue .box a span:nth-child(4){
+    background: linear-gradient(360deg, transparent, rgb(0, 225, 255));
+}
+html.blue .footer{
+    color: var(--blue);
+}
+html.blue .footer:hover{
+    border-color: var(--blue);
+}
+html.blue .footer{
+    color: var(--blue);
+}
+html.blue .iconUser{
+    color: var(--blue);
+    border-color: var(--blue);
+}
+html.blue .cabeca{
+    background-color: var(--blue);
+}
+html.blue .corpo{
+    background-color: var(--blue);
 }
