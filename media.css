@@ -1,11 +1,4 @@
-@media (max-width: 1160px){
-    .navBar
-    {
-        display: flex;
-        align-items: flex-start;
-        background-color: azure;
-    }
-} 
+
 @media (max-width: 800px)
 {
     .navBar{
@@ -30,7 +23,7 @@
   .box
    {
     width: 100vw;
-    height: 90%;
+    height: 80%;
     margin: 0;
    }
 }
