@@ -26,16 +26,20 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    height: 90px;
+    flex-wrap: nowrap;
+    height: 80px;
     width: 100%;
+    padding: 1em;
     font-weight: bolder;
     background: linear-gradient(black, #252525);
     box-shadow: 0px 15px 10px black;
 }
+.navBar .ttl{
+    margin: 30px;
+}
 .navBar a{
     height: 100%;
     color: white;
-    padding: 1px;
     text-decoration: none;
     transition: 0.7s;
 }
@@ -44,13 +48,12 @@ body{
 }
 .navBar a:hover{
     color: var(--padrao);
-    letter-spacing: 0.3em;
     transition: 1s;
 }
 .navBar a:hover span{
-    display: block;
+    display: flex;
     height: 2px;
-    width: 100%;
+    width: 100px;
     transition: 1s;
     background-color: var(--padrao);
 }
@@ -59,25 +62,8 @@ body{
 h1{
     font-size: 40px;
     margin: 0;
-    background: linear-gradient(277deg, rgb(219, 219, 219) 0%, rgb(136, 136, 136) 100%);
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0px 20px 55px white;
-}
-#firstLink{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 45vw;
-    margin-bottom: 0;
-    position: relative;
-    transition: 1s;
-}
-.navBar #firstLink:hover{
-    letter-spacing: 0.3em;
     color: var(--padrao);
-    transition: 1s;
+    text-shadow: 0px 20px 55px white;
 }
 /*------------------------------------BOX1 E BOX-----------------------------------------------*/
 
@@ -209,7 +195,7 @@ form a{
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent,  rgb(0, 0, 0));
+    background: linear-gradient(90deg, transparent,  rgb(255, 72, 0));
     animation: btn-animation 1s linear infinite;
 }
 @keyframes btn-animation {
@@ -224,7 +210,7 @@ form a{
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, rgb(0, 0, 0));
+    background: linear-gradient(180deg, transparent, rgb(255, 72, 0));
     animation: btn-animation2 linear infinite;
     animation-duration: 1s;
     animation-delay: .25s;
@@ -241,7 +227,7 @@ form a{
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent,rgb(0, 0, 0));
+    background: linear-gradient(270deg, transparent, rgb(255, 72, 0));
     animation: btn-animation3 linear infinite;
     animation-duration: 1s;
     animation-delay: .5s;
@@ -258,7 +244,7 @@ form a{
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent,rgb(0, 0, 0));
+    background: linear-gradient(360deg, transparent, rgb(255, 72, 0));
     animation: btn-animation4 linear infinite;
     animation-duration: 1s;
     animation-delay: .75s;
@@ -275,11 +261,12 @@ form a{
     flex-direction: row;
     color: var(--padrao);
     background-color: rgba(0, 0, 0, .1);
-    padding: 15px;
     width: 250px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, .6);
     box-shadow: 0px 15px 10px black;
+    padding: 15px;
+    margin-top: 2%;
 }
 .footer:hover{
     border-color:var(--padrao) ;
@@ -304,47 +291,6 @@ form a{
 .footer ul li:hover{
     transform: scale(1.3);
     transition: .5s;
-}
-.iconUser{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    right: -7vw;
-    top: 200px;
-    width: 10vw;
-    background-color: var(--var3);
-    color: var(--padrao);
-    border-radius: 25px;
-    border: 1px solid var(--padrao);
-    transition: 0.5s;
-}
-.iconUser:hover{
-    right: -2vw;
-    box-shadow: 0px 0px 20px rgb(129, 129, 129);
-    transition: .8s;
-}
-.cabeca{
-    width: 13px;
-    height: 13px;
-    border-radius: 7px;
-    background-color: var(--padrao);
-    margin-bottom: 3px;
-}
-.corpo{
-    width: 18px;
-    height: 15px;
-    background-color:var(--padrao);
-    border-radius: 90% 90% 0 0;
-}
-.icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 20%;
-    height: 100%;
-    margin: 5%;
 }
 /*___________________________________________________________________________________________________*/
 #styleR:hover{
@@ -375,6 +321,9 @@ form a{
     background-color: var(--blue);
 }
 /*------------------------------------Tema Verde--rgb(0, 255, 85)--------------------------------------*/
+html.green h1{
+    color: var(--green);
+}
 html.green .navBar a:hover{
     color: var(--green);
 }
@@ -448,7 +397,9 @@ html.green .corpo{
 }
 
 /*------------------------------------Tema Vermelho--rgb(255, 0, 0)--------------------------------------*/
-
+html.red h1{
+    color: var(--red);
+}
 html.red .navBar a:hover{
     color: var(--red);
 }
@@ -521,7 +472,9 @@ html.red .corpo{
     background-color: var(--red);
 }
 /*-----------------------------Tema Azul--rgb(0, 225, 255)---------------------------------------*/
-
+html.blue h1{
+    color: var(--blue);
+}
 html.blue .navBar a:hover{
     color: var(--blue);
 }

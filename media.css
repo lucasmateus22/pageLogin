@@ -1,0 +1,36 @@
+@media (max-width: 1160px){
+    .navBar
+    {
+        display: flex;
+        align-items: flex-start;
+        background-color: azure;
+    }
+} 
+@media (max-width: 800px)
+{
+    .navBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .navBar a{
+        height: 20px;
+        margin-bottom: 25px;
+    }
+    .navBar a:hover span{
+        width: 0;
+    }
+    .navBar h1,a:hover{
+        text-shadow: 0px 0px 5px white,
+        0px 0px 25px white,
+        0px 0px 50px white;
+    }
+  .box
+   {
+    width: 100vw;
+    height: 90%;
+    margin: 0;
+   }
+}
