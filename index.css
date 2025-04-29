@@ -1,0 +1,182 @@
+/* Estilo Base inspirado no Bootstrap com tema dark e cores quentes */
+:root {
+    --primary: #a84032; /* Vermelho escuro queimado */
+    --secondary: #ff8c42; /* Laranja queimado */
+    --background: #1e1e1e; /* Fundo dark */
+    --text-light: #f8f9fa; /* Branco suave */
+    --accent: #d4a373; /* Dourado queimado */
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--text-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Box externo */
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Efeitos de fundo (spans decorativos) */
+  .container span {
+    position: absolute;
+    background: var(--primary);
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Exemplo simples de animação decorativa */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Caixa principal */
+  .box {
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 140, 66, 0.2);
+    text-align: center;
+  }
+  
+  /* Título */
+  .box h2 {
+    margin-bottom: 20px;
+    color: var(--secondary);
+  }
+  
+  /* Formulário */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input */
+  .userBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--text-light);
+    outline: none;
+  }
+  
+  .userBox p {
+    margin-bottom: 5px;
+    text-align: left;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  #togglePasswordBtn {
+    position: relative;
+    bottom: 28px;
+    left: 45%;
+    background-color: transparent;
+    border: none;
+
+    & svg {
+      fill: white;
+    }
+  }
+  
+  /* Botão de submit */
+  .submit-btn {
+    position: relative;
+    background-color: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  /* Efeitos de hover no botão */
+  .submit-btn:hover {
+    background-color: var(--secondary);
+  }
+  
+  /* Spans decorativos no botão */
+  .submit-btn span {
+    position: absolute;
+    display: block;
+    background: var(--text-light);
+    opacity: 0.1;
+  }
+  
+  /* Botão spans para brilho decorativo (opcional) */
+  .submit-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    animation: btn-anim1 2s linear infinite;
+  }
+  @keyframes btn-anim1 {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+  }
+  .submit-btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    animation: btn-anim2 2s linear infinite;
+  }
+  @keyframes btn-anim2 {
+    0% { top: -100%; }
+    50%, 100% { top: 100%; }
+  }
+  .submit-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    animation: btn-anim3 2s linear infinite;
+  }
+  @keyframes btn-anim3 {
+    0% { right: -100%; }
+    50%, 100% { right: 100%; }
+  }
+  .submit-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    animation: btn-anim4 2s linear infinite;
+  }
+  @keyframes btn-anim4 {
+    0% { bottom: -100%; }
+    50%, 100% { bottom: 100%; }
+  }
+  
+  /* Link de registro */
+  .register {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  .register:hover {
+    text-decoration: underline;
+  }
+  

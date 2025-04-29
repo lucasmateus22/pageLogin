@@ -1,72 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0000">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <title>Document</title>
-    <style>
-        :root{
-    --var:black;
-    --var1:rgb(36, 36, 36);
-    --var2:rgb(49, 49, 49);
-    --var3:rgb(68, 68, 68);
-    --blue: rgb(0, 225, 255);
-    --red: red;
-    --green:rgb(0, 255, 85);
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+  <title>início</title>
 </head>
+
 <body>
-    <div class="navBar">
-        <a href="#" class="ttl"><h1>T itle</h1></a>
-        <a href="">HomePage<span></span></a>
-        <a href="https://github.com/lucasmateus22">My Git Hub<span></span></a>
-        <a href="">Others<span></span></a>
-        <a href="">About<span></span></a>
-    </div>
-    <div class="box1">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div class="box">
-            <h2>L ogin</h2>
-    <form action="">
-        <div class="userBox">
-            <input type="text" placeholder="...">
-            <label for="" class="">Username</label>
-        </div>        
-                
-        <div class="userBox">
-            <input type="text" placeholder="...">
-            <label for="" class="">Password</label>
-        </div>    
-    
-            <a>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            Submit
-            </a>
-            <a href="#" class="register">or register</a>
-    </form>  
-        </div>
-        <div class="footer" >
-            <label for="">Temas:</label>
-            <ul>
-                <li class="btn-color-change themeButt" onclick="changerColorR()" id="styleR"></li>
-                <li class="btn-color-change themeButt" onclick="changerColorG()" id="styleG"></li>
-                <li class="btn-color-change themeButt" onclick="changerColorB()" id="styleB"></li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="box">
+      <h2>Iniciar sessão</h2>
+      <div class="form">
+        <label class="userBox">
+          <p>Usuário:</p>
+          <input type="text" id="username" placeholder="..." autocomplete="off" required>
+        </label>
+        <label class="userBox">
+          <p>Senha:</p>
+          <input type="password" id="password" placeholder="..." autocomplete="off" required>
+          <button type="button" onclick="showPassword()" id="togglePasswordBtn">
+            <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              class="bi bi-eye-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+              <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+            </svg>
+          </button>
+        </label>
         
+        <button class="submit-btn" id="submit-btn-id" onclick="validateForm()">
+          Entrar
+        </button>
+        <a href="./home/home.html" class="register">Registre-se</a>
+      </div>
     </div>
-        
-    <script src="index.js" type="text/javascript"></script>
+  </div>
+  <script src="./services/showPass.js" type="text/javascript"></script>
+  <script src="./services/index.js" type="text/javascript"></script>
 </body>
+
 </html>
